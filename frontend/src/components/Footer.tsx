@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div>
             <div className="flex items-center mb-6">
               <Code size={28} className="text-primary-500 mr-2" />
-              <span className="text-2xl font-bold text-white">TechMonohorIT</span>
+              <span className="text-2xl font-bold text-white">TechMonohor</span>
             </div>
             <p className="mb-6">
               We build innovative digital solutions that help businesses transform and grow in the digital era.
@@ -188,7 +188,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex">
                 <Mail className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0" />
-                <span>info@TechMonohorIT.com</span>
+                <span>info@TechMonohor.com</span>
               </li>
             </ul>
             
@@ -212,7 +212,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {currentYear} TechMonohorIT. All Rights Reserved.</p>
+          <p>&copy; {currentYear} TechMonohor. All Rights Reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-primary-400 transition-colors duration-300">
               Privacy Policy

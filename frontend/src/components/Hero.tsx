@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
                   <div className="w-3 h-3 rounded-full bg-red-400"></div>
                   <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
                   <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                  <div className="text-slate-400 text-sm ml-2">TechMonohorIT-solutions.tsx</div>
+                  <div className="text-slate-400 text-sm ml-2">TechMonohor-solutions.tsx</div>
                 </div>
                 <div className="p-6 bg-slate-900 text-slate-300 font-mono text-sm">
                   <div className="flex">
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
                     <span className="text-pink-400">import</span>
                     <span className="text-white mx-2">&#123; Solutions &#125;</span>
                     <span className="text-pink-400">from</span>
-                    <span className="text-green-400 ml-2">'@TechMonohorIT/core'</span>
+                    <span className="text-green-400 ml-2">'@TechMonohor/core'</span>
                     <span className="text-white">;</span>
                   </div>
                   <div className="flex mt-2">
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
                   <div className="flex mt-2">
                     <span className="text-slate-500 mr-4">3</span>
                     <span className="text-pink-400">const</span>
-                    <span className="text-blue-400 mx-2">TechMonohorIT</span>
+                    <span className="text-blue-400 mx-2">TechMonohor</span>
                     <span className="text-white">=</span>
                     <span className="text-yellow-400 ml-2">() =&gt;</span>
                     <span className="text-white mx-2">&#123;</span>
@@ -125,7 +125,7 @@ const Hero: React.FC = () => {
                   <div className="flex mt-2">
                     <span className="text-slate-500 mr-4">13</span>
                     <span className="text-pink-400">export default</span>
-                    <span className="text-blue-400 ml-2">TechMonohorIT</span>
+                    <span className="text-blue-400 ml-2">TechMonohor</span>
                     <span className="text-white">;</span>
                   </div>
                 </div>

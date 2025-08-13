@@ -39,7 +39,7 @@ const Header: React.FC = () => {
               <span className="text-primary-600 mr-2">
                 {/* <img src={logo} alt="tm-logo"/> */}
               </span>
-              <span>TechMonohorIT</span>
+              <span>TechMonohor</span>
             </a>
           </div>
 
