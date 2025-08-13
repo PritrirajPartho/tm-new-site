@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Code, Smartphone, Globe, Server } from 'lucide-react';
+import logo from '../../dist/assets/logo.png';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,7 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <a href="#" className="text-2xl font-bold text-slate-900 flex items-center">
               <span className="text-primary-600 mr-2">
-                <Code size={28} />
+                {/* <img src={logo} alt="tm-logo"/> */}
               </span>
               <span>TechMonohorIT</span>
             </a>
