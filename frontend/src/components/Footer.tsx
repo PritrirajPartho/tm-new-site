@@ -1,5 +1,7 @@
 import React from 'react';
 import { Code, ChevronRight, Mail, Phone, MapPin, Linkedin, Twitter, Github, Facebook, Instagram } from 'lucide-react';
+import logo from '../../dist/assets/logo.png';
+
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -10,7 +12,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <div className="flex items-center mb-6">
-              <Code size={28} className="text-primary-500 mr-2" />
+                <img className='h-[50px] bg-white mr-2' src={logo} alt="tm-logo"/>
               <span className="text-2xl font-bold text-white">TechMonohor</span>
             </div>
             <p className="mb-6">
@@ -180,7 +182,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex">
                 <MapPin className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0" />
-                <span>Sylhet, Bangladesh</span>
+                <span>Dhaka, Bangladesh</span>
               </li>
               <li className="flex">
                 <Phone className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0" />

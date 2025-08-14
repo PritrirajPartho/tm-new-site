@@ -37,7 +37,7 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <a href="#" className="text-2xl font-bold text-slate-900 flex items-center">
               <span className="text-primary-600 mr-2">
-                <img className='h-[150px]' src={logo} alt="tm-logo"/>
+                <img className='h-[50px]' src={logo} alt="tm-logo"/>
               </span>
               {/* <span>TechMonohor</span> */}
             </a>
