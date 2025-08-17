@@ -373,7 +373,7 @@
 /* Small mobile devices (320px and up) */
 @media (min-width: 320px) and (max-width: 480px) {
   .container-custom {
-    @apply px-2;
+    @apply px-3;
   }
   
   .btn {
