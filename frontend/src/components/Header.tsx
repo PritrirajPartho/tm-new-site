@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Code, Smartphone, Globe, Server } from 'lucide-react';
-import logo from '../../dist/assets/logo.png';
+import logo from '/images/logo.png';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Code, ChevronRight, Mail, Phone, MapPin, Linkedin, Twitter, Github, Facebook, Instagram } from 'lucide-react';
-import logo from '../../dist/assets/logo.png';
+import logo from '/images/logo.png';
 
 
 const Footer: React.FC = () => {

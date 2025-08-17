@@ -19,7 +19,7 @@ const projects: Project[] = [
     category: 'Web Development',
     description: 'A comprehensive Home builder solution for modern home/house, mall or resort.',
     technologies: ['HTML5', 'CSS3', 'Javascript', 'JQuery'],
-    imageUrl: "../../dist/assets/vision.png",
+    imageUrl: "/images/vision.png",
     link: 'https://luxury-macaron-30e224.netlify.app/',
   },
   {
@@ -28,7 +28,7 @@ const projects: Project[] = [
     category: 'Web Development',
     description: 'Student aided database for a school can build better mangament system.',
     technologies: ['Javascript', 'Firebase', 'Node.js', 'MongoDB'],
-    imageUrl: '../../dist/assets/school.jpg',
+    imageUrl: '/images/school.jpg',
     link: '#',
   },
   {
@@ -37,7 +37,7 @@ const projects: Project[] = [
     category: 'Web Development',
     description: 'web contents management platform with listing management, tenant screening, and financial reporting.',
     technologies: ['Next.js', 'Javascript', 'PostgreSQL'],
-    imageUrl: '../../dist/assets/crm.jpg',
+    imageUrl: '/images/crm.jpg',
     link: '#',
   },
   {
@@ -46,7 +46,7 @@ const projects: Project[] = [
     category: 'Web Development',
     description: 'An interactive portfolio site for selling.',
     technologies: ['Javascript', 'React.js', 'Tailwind.css'],
-    imageUrl: '../../dist/assets/tech.jpg',
+    imageUrl: '/images/tech.jpg',
     link: '#',
   },
   {
@@ -55,7 +55,7 @@ const projects: Project[] = [
     category: 'Web & Mobile',
     description: 'A Drawing Related app. any kid can draw here and can do courses here.',
     technologies: ['React', 'React Native', 'Node.js', 'MongoDB'],
-    imageUrl: '../../dist/assets/drawer.png',
+    imageUrl: '/images/glossy.png',
     link: '#',
   },
   {
@@ -64,7 +64,7 @@ const projects: Project[] = [
     category: 'Web Development',
     description: 'A food E-commerece website for food buying.',
     technologies: ['React.js', 'Tailwind.css', 'MongoDB'],
-    imageUrl: '../../dist/assets/dish.png',
+    imageUrl: '/images/dish.png',
     link: '#',
   },
 ];
