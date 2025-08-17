@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, Code, Smartphone, Globe, Server } from 'lucide-react';
-import logo from '../../dist/assets/logo.png';
+import logo from '/images/logo.png';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +37,11 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <a href="#" className="text-xl sm:text-2xl font-bold text-slate-900 flex items-center">
               <span className="text-primary-600 mr-2">
+<<<<<<< HEAD
                 <img className='h-8 sm:h-10 md:h-[50px] w-auto' src={logo} alt="tm-logo"/>
+=======
+                <img className='h-[50px]' src={logo} alt="tm-logo"/>
+>>>>>>> cde7aaf23428babcea0fabc0b71a37cb4e1e6312
               </span>
             </a>
           </div>

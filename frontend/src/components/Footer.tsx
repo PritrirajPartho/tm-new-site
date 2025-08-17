@@ -1,5 +1,7 @@
 import React from 'react';
 import { Code, ChevronRight, Mail, Phone, MapPin, Linkedin, Twitter, Github, Facebook, Instagram } from 'lucide-react';
+import logo from '/images/logo.png';
+
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -179,8 +181,8 @@ const Footer: React.FC = () => {
             <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-white mb-4 sm:mb-5 md:mb-6">Contact Us</h3>
             <ul className="space-y-3 sm:space-y-4">
               <li className="flex">
-                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary-500 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
-                <span className="text-sm sm:text-base">Dhaka, Bangladesh</span>
+                <MapPin className="w-5 h-5 text-primary-500 mr-3 flex-shrink-0" />
+                <span>Dhaka, Bangladesh</span>
               </li>
               <li className="flex">
                 <Phone className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-primary-500 mr-2 sm:mr-3 flex-shrink-0 mt-0.5" />
