@@ -16,29 +16,41 @@
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl;
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
   }
 
   h3 {
-    @apply text-2xl md:text-3xl;
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  p {
+    @apply text-sm sm:text-base md:text-lg lg:text-xl;
   }
 }
 
 @layer components {
   .container-custom {
-    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+    @apply w-full mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 max-w-[1400px];
+  }
+
+  .container-fluid {
+    @apply w-full mx-auto px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-20 3xl:px-32;
   }
 
   .section-padding {
-    @apply py-16 md:py-24;
+    @apply py-12 sm:py-16 md:py-20 lg:py-24 xl:py-32 2xl:py-40;
+  }
+
+  .section-padding-sm {
+    @apply py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24;
   }
 
   .btn {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-lg transition-all duration-300 transform;
+    @apply inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-3 md:px-6 md:py-3 lg:px-8 lg:py-4 text-sm sm:text-base md:text-lg font-medium rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95;
   }
 
   .btn-primary {
@@ -49,12 +61,202 @@
     @apply bg-white text-blue-600 border border-blue-600 hover:bg-blue-50 hover:-translate-y-1 shadow-md hover:shadow-lg;
   }
 
+  .btn-sm {
+    @apply px-3 py-2 text-sm;
+  }
+
+  .btn-lg {
+    @apply px-8 py-4 text-lg;
+  }
+
   .card {
     @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden;
   }
 
   .gradient-text {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600;
+  }
+
+  /* Responsive grid utilities */
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5;
+  }
+
+  .grid-responsive-2 {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4;
+  }
+
+  .grid-responsive-3 {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+  }
+
+  /* Responsive spacing utilities */
+  .space-responsive {
+    @apply space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12;
+  }
+
+  .gap-responsive {
+    @apply gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12;
+  }
+
+  /* Responsive text utilities */
+  .text-responsive-sm {
+    @apply text-xs sm:text-sm md:text-base;
+  }
+
+  .text-responsive-base {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  .text-responsive-lg {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl;
+  }
+
+  .text-responsive-xl {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  /* Responsive padding utilities */
+  .p-responsive {
+    @apply p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12;
+  }
+
+  .px-responsive {
+    @apply px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12;
+  }
+
+  .py-responsive {
+    @apply py-4 sm:py-6 md:py-8 lg:py-10 xl:py-12;
+  }
+
+  /* Responsive margin utilities */
+  .m-responsive {
+    @apply m-4 sm:m-6 md:m-8 lg:m-10 xl:m-12;
+  }
+
+  .mx-responsive {
+    @apply mx-3 sm:mx-4 md:mx-6 lg:mx-8 xl:mx-12;
+  }
+
+  .my-responsive {
+    @apply my-4 sm:my-6 md:my-8 lg:my-10 xl:my-12;
+  }
+
+  /* Responsive width utilities */
+  .w-responsive {
+    @apply w-full sm:w-auto;
+  }
+
+  .max-w-responsive {
+    @apply max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl;
+  }
+
+  /* Responsive height utilities */
+  .h-responsive {
+    @apply h-32 sm:h-40 md:h-48 lg:h-56 xl:h-64 2xl:h-72;
+  }
+
+  /* Responsive flex utilities */
+  .flex-responsive {
+    @apply flex flex-col sm:flex-row;
+  }
+
+  .flex-responsive-col {
+    @apply flex flex-col lg:flex-row;
+  }
+
+  .flex-responsive-wrap {
+    @apply flex flex-wrap justify-center sm:justify-start;
+  }
+
+  /* Responsive positioning utilities */
+  .absolute-responsive {
+    @apply absolute -top-12 sm:-top-16 md:-top-20 lg:-top-24 xl:-top-32;
+  }
+
+  .absolute-responsive-bottom {
+    @apply absolute -bottom-12 sm:-bottom-16 md:-bottom-20 lg:-bottom-24 xl:-bottom-32;
+  }
+
+  /* Responsive blur utilities */
+  .blur-responsive {
+    @apply blur-2xl sm:blur-3xl;
+  }
+
+  /* Responsive size utilities */
+  .size-responsive {
+    @apply w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem] 2xl:w-[32rem] 2xl:h-[32rem];
+  }
+
+  /* Mobile-first responsive utilities */
+  .mobile-first {
+    @apply block sm:hidden;
+  }
+
+  .tablet-up {
+    @apply hidden sm:block;
+  }
+
+  .desktop-up {
+    @apply hidden lg:block;
+  }
+
+  .mobile-only {
+    @apply block sm:hidden;
+  }
+
+  .tablet-only {
+    @apply hidden sm:block lg:hidden;
+  }
+
+  .desktop-only {
+    @apply hidden lg:block;
+  }
+
+  /* Touch-friendly utilities */
+  .touch-friendly {
+    @apply min-h-[44px] min-w-[44px];
+  }
+
+  .touch-friendly-sm {
+    @apply min-h-[36px] min-w-[36px];
+  }
+
+  .touch-friendly-lg {
+    @apply min-h-[48px] min-w-[48px];
+  }
+
+  /* Scrollbar utilities */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 2px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 2px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
   }
 }
 
@@ -87,4 +289,201 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Custom scrollbar for better mobile experience */
+@media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }
+}
+
+/* Touch-friendly interactions for mobile */
+@media (max-width: 768px) {
+  .btn, .card, a {
+    @apply transition-transform duration-200;
+  }
+  
+  .btn:active, .card:active, a:active {
+    @apply scale-95;
+  }
+
+  /* Ensure touch targets are large enough */
+  .btn, .card, a, button, input, select, textarea {
+    @apply touch-friendly;
+  }
+
+  /* Improve form element spacing on mobile */
+  input, select, textarea {
+    @apply text-base;
+  }
+
+  /* Better mobile navigation */
+  nav a, nav button {
+    @apply touch-friendly;
+  }
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .card, .btn {
+    @apply shadow-sm;
+  }
+}
+
+/* Ultra-wide screen optimizations */
+@media (min-width: 1536px) {
+  .container-custom {
+    @apply max-w-[1600px];
+  }
+  
+  .container-fluid {
+    @apply max-w-[1800px];
+  }
+}
+
+/* Landscape mobile optimizations */
+@media (max-height: 500px) and (orientation: landscape) {
+  .section-padding {
+    @apply py-8;
+  }
+  
+  .section-padding-sm {
+    @apply py-6;
+  }
+
+  .header {
+    @apply py-2;
+  }
+}
+
+/* Small mobile devices (320px and up) */
+@media (min-width: 320px) and (max-width: 480px) {
+  .container-custom {
+    @apply px-2;
+  }
+  
+  .btn {
+    @apply px-3 py-2 text-sm;
+  }
+  
+  h1 {
+    @apply text-2xl;
+  }
+  
+  h2 {
+    @apply text-xl;
+  }
+  
+  h3 {
+    @apply text-lg;
+  }
+}
+
+/* Medium mobile devices (481px and up) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-custom {
+    @apply px-3;
+  }
+}
+
+/* Tablet devices (768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container-custom {
+    @apply px-4;
+  }
+}
+
+/* Large tablet devices (1024px and up) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .container-custom {
+    @apply px-6;
+  }
+}
+
+/* Desktop devices (1280px and up) */
+@media (min-width: 1280px) and (max-width: 1535px) {
+  .container-custom {
+    @apply px-8;
+  }
+}
+
+/* Large desktop devices (1536px and up) */
+@media (min-width: 1536px) {
+  .container-custom {
+    @apply px-12;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header, .footer, .btn, .card {
+    @apply shadow-none;
+  }
+  
+  .section-padding {
+    @apply py-8;
+  }
+  
+  .container-custom {
+    @apply max-w-none px-0;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .card {
+    @apply border-2 border-slate-900;
+  }
+  
+  .btn {
+    @apply border-2 border-current;
+  }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+  /* Dark mode styles can be added here */
+}
+
+/* Focus visible for better accessibility */
+.focus-visible:focus {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+}
+
+/* Better focus styles for form elements */
+input:focus, select:focus, textarea:focus {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2 border-primary-500;
+}
+
+/* Improved button focus states */
+.btn:focus {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+}
+
+/* Better link focus states */
+a:focus {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2 rounded;
 }

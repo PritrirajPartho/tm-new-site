@@ -5,15 +5,15 @@ import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Team from './components/Team';
 import Testimonials from './components/Testimonials';
-import Contact from './components/Contact';
 import Blog from './components/Blog';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 overflow-x-hidden">
       <Header />
-      <main>
+      <main className="relative">
         <Hero />
         <Services />
         <Portfolio />
